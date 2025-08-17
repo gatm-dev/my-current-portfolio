@@ -1,20 +1,98 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind 4.1 con Vanilla JS</title>
+    <title>Michelle Auxwave | Portafolio</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="bg-gray-100 p-6">
-    <h1 class="text-3xl font-bold text-blue-600">Hola Tailwind 4.1</h1>
-    <button
-      id="btn"
-      class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+  <body
+    class="min-h-dvh bg-gradient-to-b from-neutral-900 via-80% via-neutral-700 to-neutral-800"
+  >
+    <header
+      class="w-full flex flex-wrap items-center justify-between p-4 bg-neutral-900"
     >
-      Click
-    </button>
+      <div
+        class="flex-grow-1 flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ..."
+      >
+        <img
+          class="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0"
+          src="./assets/LOGO-FB2.png"
+          alt=""
+        />
 
+        <div class="space-y-2 text-center sm:text-left">
+          <div class="space-y-0.5">
+            <p class="text-lg font-semibold text-white">Michelle Auxwave</p>
+            <p class="font-medium text-gray-500">
+              Senior FullStack Developer and Audio Producer
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="flex flex-row mx-auto my-auto gap-6 p-lg-4">
+        <a
+          href="https://www.linkedin.com/in/michelle-auxwave/"
+          target="_blank"
+          class="hover:scale-105 transition-transform duration-300"
+          ><svg class="size-12">
+            <use xlink:href="./assets/sprite.svg#icon-linkedin" />
+          </svg>
+        </a>
+        <a
+          href="https://github.com/gatm-dev"
+          target="_blank"
+          class="hover:scale-105 transition-transform duration-300"
+          ><svg class="size-12 bg-white rounded-full p-1">
+            <use xlink:href="./assets/sprite.svg#icon-github" />
+          </svg>
+        </a>
+      </section>
+    </header>
+    <main>
+      <div class="carousel mx-auto max-w-2xl max-h-50 overflow-hidden flex">
+        <div class="carousel-group transform-3d">
+          <div class="w-full h-full flex gap-4 translate-z-12 rotate-x-0">
+            <img
+              src="./assets/certificates/01.png"
+              alt="Image 1"
+              class="w-auto h-50"
+            />
+            <div class="flex flex-col justify-center p-4">
+              <p class="text-gray-700">Certificate Title</p>
+              <p class="text-gray-500">Issued by Organization</p>
+              <span class="text-gray-400">Date of Issue</span>
+              <a
+                href="./assets/certificates/01.png"
+                class="text-blue-500 hover:underline"
+                >View Certificate</a
+              >
+            </div>
+          </div>
+        </div>
+        <div aria-hidden class="carousel-group">
+          <div class="w-full h-full flex gap-4 translate-z-12 rotate-x-0">
+            <img
+              src="./assets/certificates/01.png"
+              alt="Image 1"
+              class="w-auto h-50"
+            />
+            <div class="flex flex-col justify-center p-4">
+              <p class="text-gray-700">Certificate Title</p>
+              <p class="text-gray-500">Issued by Organization</p>
+              <span class="text-gray-400">Date of Issue</span>
+              <a
+                href="./assets/certificates/01.png"
+                class="text-blue-500 hover:underline"
+                >View Certificate</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
     <script src="scripts.js"></script>
   </body>
 </html>
