@@ -31,3 +31,16 @@
   will-change: transform;
   animation: slide 15s linear infinite;
 }
+
+.carousel-item {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  transform: perspective(100vh) rotateY(45deg) scale(0.8);
+
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    transform: perspective(100vh) rotateY(0) scale(1);
+  }
+}
